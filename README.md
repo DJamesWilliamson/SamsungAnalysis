@@ -37,7 +37,9 @@ The steps in the run_analysis.R script file are described in detail below:
 * stringr
 * dplyr
 
-## SECTION A for use if data to be downloaded (commented out)
+## SECTION A for use if data to be downloaded
+**By default this has been commented out**
+
 ### Data acquisition 
 
 * a working directory was created called "Samsung", provided it was not already present
@@ -49,7 +51,9 @@ The steps in the run_analysis.R script file are described in detail below:
 * the files for the subjects and activities from the train and test cohorts were read into R
 * the fixed width format files containing the accelerometer and gyroscopic data were read into R
 
-## SECTION B for use when the following files are already in the working directory (as required for marking)
+## SECTION B for use when the files are in the working directory
+**Assignment requirement**
+
 ### Required files
 * activity_labels.txt
 * features.txt
@@ -66,7 +70,7 @@ The steps in the run_analysis.R script file are described in detail below:
 * the fixed width format files containing the accelerometer and gyroscopic data were read into R
 
 ## SECTION C common to both methods A and B
-### cleaning and combining files to create a tidy dataset
+### Cleaning and combining files to create a tidy dataset
 
 * the numerical activity codes were substituted with their descriptors
 * the train and test activity files were combined in rows (in that order) and the variable named "Activity"
@@ -95,7 +99,6 @@ Each column contains a single variable.
 
 * the data frame was converted to dplyr tbl format   
 * the data were grouped by Subject_Activity (the composite variable created to make analysis easier
-
 * the means of each variable were calculated
 * the subjects and activities were re-extracted and returned to the table (to maintain sort order)
 * the Subject_Activity variable was removed as it was redundant
