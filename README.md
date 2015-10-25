@@ -81,7 +81,7 @@ The steps in the run_analysis.R script file are described in detail below:
 		triaxial angular velocity, in both the time and frequency domains
 * the Index variable was added
 * the cohort variable was added
-* the variable colums were re-ordered
+* the variable columns were re-ordered
 * descriptors from the CodeBook were used to replace the variable codes (For ease of marking, these are coded)
 
 The output is a data.frame: 102999 obs. of 47 variables called dataset.
@@ -95,10 +95,13 @@ Each column contains a single variable.
 
 * the data frame was converted to dplyr tbl format   
 * the data were grouped by Subject_Activity (the composite variable created to make analysis easier
+
 * the means of each variable were calculated
-* the subjects were re-extracted and returned to the table (to maintain sort order)
+* the subjects and activities were re-extracted and returned to the table (to maintain sort order)
+* the Subject_Activity variable was removed as it was redundant
+* the data were sorted by Subject, then Activity
 * the tidy_summary (dimensions 180 obs  44 variables) was created, removing Subject variable (as not required)
-* the tidy_summary was written to a text file
+* the tidy_summary was written to a text file (tidy_summary.txt) using write.table (no row names)
 
 
 
