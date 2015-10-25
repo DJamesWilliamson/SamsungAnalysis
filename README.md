@@ -1,5 +1,3 @@
-SamsungAnalysis
-
 Analysis of Human Activity Recognition Using Smartphones Data Set
 ===================================================================
 
@@ -11,36 +9,36 @@ These data were processed to provide 561 summary features which are the basis of
 The data from the two cohorts were combined and only those features presenting the means or 
 standard deviations were selected.
 
-## A full description of the data may be obtained from:
+### A full description of the data may be obtained from:
 
 [Link to description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-## The raw data may be obtained from:
+### The raw data may be obtained from:
 
 [Link to data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-## The appropriate citation for these data is:
+### The appropriate citation for these data is:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz.
 A Public Domain Dataset for Human Activity Recognition Using Smartphones.
 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013.
 Bruges, Belgium 24-26 April 2013.
 
-## This repository contains the following items:
+### This repository contains the following items:
 
 * CodeBook.md which describes the variables, the data, and the transformations performed
 * run_analysis.R which is the script file which contains the code to extract and tidy the data for analysis
 
 The steps in the run_analysis.R script file are described in detail below:
 
-# PREPARATION
-## Loading the necessary packages which include:
+## PREPARATION
+### Loading the necessary packages which include:
 * readr
 * stringr
 * dplyr
 
-# SECTION A for use if the data have to be downloaded (by default it is commented out)
-## Data acquisition 
+## SECTION A for use if data to be downloaded (commented out)
+### Data acquisition 
 
 * a working directory was created called "Samsung", provided it was not already present
 * the zip file was downloaded from the source above
@@ -51,8 +49,8 @@ The steps in the run_analysis.R script file are described in detail below:
 * the files for the subjects and activities from the train and test cohorts were read into R
 * the fixed width format files containing the accelerometer and gyroscopic data were read into R
 
-# SECTION B for use when the following files are already in the working directory (as required for marking)
-## Required files
+## SECTION B for use when the following files are already in the working directory (as required for marking)
+### Required files
 * activity_labels.txt
 * features.txt
 * subject_train.txt
@@ -62,13 +60,13 @@ The steps in the run_analysis.R script file are described in detail below:
 * X_train.txt
 * X_test.txt
 
-## Data acquisition
+### Data acquisition
 * the files which described the activities and the features (analyses) were read into R 
 * the files for the subjects and activities from the train and test cohorts were read into R
 * the fixed width format files containing the accelerometer and gyroscopic data were read into R
 
-# SECTION C common to both methods A and B
-## cleaning and combining files to create a tidy dataset
+## SECTION C common to both methods A and B
+### cleaning and combining files to create a tidy dataset
 
 * the numerical activity codes were substituted with their descriptors
 * the train and test activity files were combined in rows (in that order) and the variable named "Activity"
@@ -92,8 +90,8 @@ Each row in dataset represents a unique sample taken from a subject
 belonging to the training or testing cohort during the specified activity.
 Each column contains a single variable.
 
-# SECTION D Analysis
-## Stages in the analysis and return of the text table tidy_summary.txt:
+## SECTION D Analysis
+### Stages in the analysis and return of the text table tidy_summary.txt:
 
 * the data frame was converted to dplyr tbl format   
 * the data were grouped by Subject_Activity (the composite variable created to make analysis easier
