@@ -1,6 +1,6 @@
-# SamsungAnalysis
+SamsungAnalysis
 
-# Analysis of Human Activity Recognition Using Smartphones Data Set
+Analysis of Human Activity Recognition Using Smartphones Data Set
 ===================================================================
 
 Briefly, volunteer subjects (1-30) wearing a Samsung phone on a belt were randomly assigned

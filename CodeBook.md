@@ -1,7 +1,7 @@
-# Analysis of Human Activity Recognition Using Smartphones Data Set
+Analysis of Human Activity Recognition Using Smartphones Data Set
 ====================================================================
 
-##Experimental Design
+## Experimental Design
 
 Briefly, volunteer subjects (1-30) wearing a Samsung phone on a belt were randomly assigned
 to two cohorts (70% train, 30% test) and observed while participating on at least one occasion 
@@ -11,26 +11,26 @@ These data were processed to provide 561 summary features which are the basis of
 The data from the two cohorts were combined and only those features presenting the means or 
 standard deviations were selected.
 
-## A full description of the data may be obtained from:
+### A full description of the data may be obtained from:
 
 [Link to description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-## The raw data may be obtained from:
+### The raw data may be obtained from:
 
 [Link to data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-## The appropriate citation for these data is:
+### The appropriate citation for these data is:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz.
 A Public Domain Dataset for Human Activity Recognition Using Smartphones.
 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013.
 Bruges, Belgium 24-26 April 2013.
 
-## The description of the code used for getting, cleaning and analysing the data is provided in the README.md
+### The description of the code used for getting, cleaning and analysing the data is provided in the README.md
 
 =============================================================================================
 
-# Code book
+## Code book
 
 ID	Code	Descriptor		Comment
 
